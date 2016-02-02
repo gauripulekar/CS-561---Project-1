@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package datasetcreator;
 import java.util.Random;
 import java.io.PrintWriter;
 import java.io.BufferedWriter;
@@ -91,7 +90,7 @@ public class DataSetCreator {
                     stringBuilderObj.append(ATOZ.charAt(randomGenerator.nextInt(ATOZ.length())));
 
                 //System.out.println(transID +","+customerID+","+transTotal+","+transNumItems+","+transDescLength);
-                out.println(transID +","+customerID+","+transTotal+","+transNumItems+","+transDescLength);
+                out.println(transID +","+customerID+","+transTotal+","+transNumItems+","+stringBuilderObj.toString());
             }
         }
         catch(IOException e)
